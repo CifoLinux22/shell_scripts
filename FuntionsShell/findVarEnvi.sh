@@ -10,7 +10,7 @@ read var
 findenv()
 #This funtion needs an atribute wich is the one to be searched as env variable
 {
-env | grep -w "$1" > /dev/null 2> /dev/null
+env | grep -w "$1" > /dev/null 2> /dev/null # bit-bucket (/dev/null)
 result=$?
  
 if [ $result = "0" ];
