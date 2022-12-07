@@ -7,6 +7,8 @@ echo "Dona'm una ruta de dades"
 read -r ruta
 
 num=$(ls -1 "$ruta" | wc -l | sed 's/ //g')
+#num=$(ls -1A "$ruta" | wc -l | sed 's/ //g')
+# ls -1A -A all entries excvept ./ and ../
 #exclude hidden files (-not -name '.*') (-not -path '*/[@.]*')
 total=$(find "$ruta" -maxdepth 1 -type f -not -name '.*' -o -type d -not -name '.*' 2>/dev/null | wc -l | sed 's/ //g')
 #numfi=$(find "$ruta" -type f 2>/dev/null | wc -l | sed 's/ //g')
