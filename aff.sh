@@ -2,6 +2,7 @@
 
 #! /bin/bash
 
+#read -p "Introduce la ruta: " MIRUTA
 echo 'Introduir el nom del fitxer amb la ruta a revisar'
 read nomfile
 if [ -e  "$nomfile" ]
