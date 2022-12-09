@@ -1,4 +1,4 @@
 #! /bin/bash
-echo "Dona´m una ruta de dades"
+echo "Donam una ruta de dades"
 read ruta
 

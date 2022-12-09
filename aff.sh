@@ -1,7 +1,7 @@
 #! /bin/bash
-echo 'Introduir el nom del fitxer amb la ruta a revisar'
-read nomfile
-if [ -e  $nomfile]
+echo "Introduir el nom del fitxer amb la ruta a revisa\n"
+read  -r nomfile
+if [ -e  "$nomfile" ]
 then
     echo "El fitxer $nomfile pertany al systema d'arxius"
 else
