@@ -1,0 +1,9 @@
+#!/bin/bash
+
+ls -lR /home/alex/* | grep "$1 $2" > cambios$2$1.log 2> /dev/null
+
+if [ "$?" = "0" ];then
+        echo -e "Datos encontrados, revisa el log."
+else
+	echo -e "No se encuentran coincidencias."
+fi

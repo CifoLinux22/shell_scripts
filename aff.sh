@@ -1,9 +1,13 @@
+# Script per saber si un fitxer amb la seva ruta, introduït per teclat existeix o no.
+
 #! /bin/bash
-echo "Introduir el nom del fitxer amb la ruta a revisa\n"
-read  -r nomfile
-if [ -e  "$nomfile" ]
+
+#read -p "Introduce la ruta: " nomruta
+echo -e "Introduir el nom del fitxer amb la ruta a revisa\n"
+read  -r nomruta
+if [ -e  "$nomruta" ]
 then
-    echo "El fitxer $nomfile pertany al systema d'arxius"
+    echo "El fitxer $nomruta pertany al systema d'arxius"
 else
-    echo "El fitxer $nomfile NO es un fitxer del systema"
+    echo "El fitxer $nomruta NO es un fitxer del systema"
 fi

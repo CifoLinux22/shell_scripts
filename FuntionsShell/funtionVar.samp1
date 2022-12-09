@@ -1,0 +1,9 @@
+editors()
+{
+editor=emacs
+echo "My editors is : $editor. $editor is a fun text editor."
+}
+
+# This funtion is only executable in a LINUX enviroment doing the next procedure:
+# $. funtionVar.sample1
+# editors
